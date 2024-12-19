@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: yekan;
+    scroll-behavior: smooth;
+  }
+
+  .counter-box {
+    @apply w-[35px] h-[35px] flex justify-center items-center bg-white rounded-[7px] text-[18px] font-sans;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@font-face {
+  font-family: yekan;
+  src: url("../../public/Fonts/Fa/iranYekan/Regular/IRANYekan.eot");
+  src: url("../../public/Fonts/Fa/iranYekan/Regular/IRANYekan.woff");
+  src: url("../../public/Fonts/Fa/iranYekan/Regular/IRANYekan.woff2");
+  src: url("../../public/Fonts/Fa/iranYekan/Regular/IRANYekan.ttf");
+  font-weight: normal;
+}
+
+swiper-container .swiper-button-prev,
+swiper-container .swiper-button-next {
+  display: none !important;
+}
+
+.custom-prev,
+.custom-next,
+.custom-nextBrand,
+.custom-prevBrand,
+.custom-nextMostSell,
+.custom-prevMostSell,
+.custom-nextmainSlider,
+.custom-prevmainSlider,
+.custom-nextamazingSlider,
+.custom-prevamazingSlider {
+  background-color: #fbffff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  z-index: 100;
+}
+
+.custom-prev,
+.custom-prevBrand {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 40px / 2);
+}
+
+.custom-next {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 40px / 2);
+}
+
+.custom-nextBrand {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 40px / 2);
+}
+.custom-prevBrand {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 40px / 2);
+}
+
+.custom-nextMostSell {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 40px / 2);
+}
+.custom-prevMostSell {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 40px / 2);
+}
+.custom-prevmainSlider {
+  position: absolute;
+  right: 80px;
+  bottom: 30px;
+  z-index: 4;
+  opacity: 0;
+  transition: all;
+}
+.custom-nextmainSlider {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 4;
+  opacity: 0;
+  transition: all;
+}
+
+.mainSliderx:hover .custom-prevmainSlider {
+  opacity: 1;
+  transition-duration: 400ms;
+}
+
+.mainSliderx:hover .custom-nextmainSlider {
+  opacity: 1;
+  transition-duration: 400ms;
+}
+
+.swiper-pagination-bullet {
+  background-color: red !important;
+  opacity: 1;
+}
+
+.custom-prevamazingSlider {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 40px / 2);
+}
+.custom-nextamazingSlider {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 40px / 2);
+}
+
+.xxx::marker {
+  display: none;
+}
+
+.xxxx{
+  z-index: 100 !important;
+}
